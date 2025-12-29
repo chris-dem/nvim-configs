@@ -1,0 +1,1769 @@
+{
+    "LaTeX - inline math (dollars)": {
+        "prefix": "ii",	
+        "body": ["$$1$ $0"],
+        "description": "Create inline math formula"
+    },
+
+    "LaTeX - display math (dollars)": {
+
+        "prefix": "dd", 
+        "body": ["$$ $1 $$$0"],
+        "description": "Create display math formula"
+    },
+
+    "LaTeX - inline math with display style (dollars)": {
+        "prefix": "id",	
+        "body": ["$\\displaystyle $1$ $0"],
+        "description": "Create inline math formula with display style"
+    },
+
+    "LaTeX - inline math (brackets)": {
+        "prefix": "II", 
+        "body": ["\\($1\\) $0"],
+        "description": "Create inline math formula"
+    },
+    "LaTeX - display math (brackets)": {
+        "prefix": "DD", 
+        "body": ["\\[$1\\]$0"],
+        "description": "Create display math formula"
+    },
+
+
+    "LaTeX - left": {
+        "prefix": "left",
+        "body": ["\\left"]
+    },
+    "LaTeX - right": {
+        "prefix": "right",
+        "body": ["\\right"]
+    },
+    "LaTeX - langle": {
+        "prefix": "langle",
+        "body": ["\\langle "]
+    },
+    "LaTeX - rangle": {
+        "prefix": "rangle",
+        "body": ["\\rangle "]
+    },
+    "LaTeX - lfloor": {
+        "prefix": "lfloor",
+        "body": ["\\lfloor "]
+    },
+    "LaTeX - rfloor": {
+        "prefix": "rfloor",
+        "body": ["\\rfloor "]
+    },
+    "LaTeX - lceil": {
+        "prefix": "lceil",
+        "body": ["\\lceil "]
+    },
+    "LaTeX - rceil": {
+
+        "prefix": "rceil",
+        "body": ["\\rceil "]
+    },
+    "LaTeX - ulcorner": {
+
+        "prefix": "ulcorner",
+        "body": ["\\ulcorner "]
+    },
+    "LaTeX - urcorner": {
+
+        "prefix": "urcorner",
+        "body": ["\\urcorner "]
+    },
+    "LaTeX - llcorner": {
+
+        "prefix": "llcorner",
+        "body": ["\\llcorner "]
+    },
+    "LaTeX - lrcorner": {
+
+        "prefix": "lrcorner",
+        "body": ["\\lrcorner "]
+    },
+
+
+    "LaTeX - abs": {
+
+        "prefix": "abs",
+        "body": ["\\left| $1 \\right| $0"]
+    },
+    "LaTeX - norm": {
+
+        "prefix": "norm",
+        "body": ["\\left\\| $1 \\right\\| $0"]
+    },
+    "LaTeX - lparenthesis + rparenthesis": {
+
+        "prefix": "lrparentheses",
+        "body": ["\\left( $1 \\right) $0"]
+    },
+    "LaTeX - lbracket + rbracket": {
+
+        "prefix": "lrbrackets",
+        "body": ["\\left[ $1 \\right] $0"]
+    },
+    "LaTeX - lcurlybracket + rcurlybracket": {
+
+        "prefix": "lrcurlybrackets",
+        "body": ["\\left\\{ $1 \\right\\\\} $0"]
+    },
+    "LaTeX - langle + rangle": {
+
+        "prefix": "lrangle",
+        "body": ["\\left\\langle $1 \\right\\rangle $0"]
+    },
+    "LaTeX - lfloor + rfloor": {
+
+        "prefix": "lrfloor",
+        "body": ["\\left\\lfloor $1 \\right\\rfloor $0"]
+    },
+    "LaTeX - lceil + rceil": {
+
+        "prefix": "lrceil",
+        "body": ["\\left\\lceil $1 \\right\\rceil $0"]
+    },
+
+
+    "LaTeX - infty (alias)": {
+
+        "prefix": "oo",
+        "body": ["\\infty "]
+    },
+    "LaTeX - degree (alias)": {
+
+        "prefix": "degr",
+        "body": ["^{\\circ} "]
+    },
+    "LaTeX - mathbf (alias)": {
+
+        "prefix": "bf",
+        "body": ["\\mathbf{$1}$0"]
+    },
+    "LaTeX - mathbb (alias)": {
+
+        "prefix": "bb",
+        "body": ["\\mathbb{$1}$0"]
+    },
+    "LaTeX - mathbb{R} (alias)": {
+
+        "prefix": "bbR",
+        "body": ["\\mathbb{R} "]
+    },
+    "LaTeX - mathbb{Z} (alias)": {
+
+        "prefix": "bbZ",
+        "body": ["\\mathbb{Z} "]
+    },
+    "LaTeX - mathbb{Q} (alias)": {
+
+        "prefix": "bbQ",
+        "body": ["\\mathbb{Q} "]
+    },
+    "LaTeX - mathbb{N} (alias)": {
+
+        "prefix": "bbN",
+        "body": ["\\mathbb{N} "]
+    },
+    "LaTeX - mathbb{C} (alias)": {
+
+        "prefix": "bbC",
+        "body": ["\\mathbb{C} "]
+    },
+    "LaTeX - Leftrightarrow (alias)": {
+
+        "prefix": "equivalent",
+        "body": ["\\Leftrightarrow "]
+    },
+    "LaTeX - Rightarrow (alias)": {
+
+        "prefix": "implies",
+        "body": ["\\Rightarrow "]
+    },
+    "LaTeX - derivative (alias)": {
+
+        "prefix": "deriv",
+        "body": ["\\frac{d${1:f}}{d${2:x}} $0"]
+    },
+    "LaTeX - partial derivative (alias)": {
+
+        "prefix": "pderiv",
+        "body": ["\\frac{\\partial ${1:f}}{\\partial ${2:x}} $0"]
+    },
+    "LaTeX - cases (alias)": {
+
+        "prefix": "cases",
+        "body": ["\\begin{cases}","\t$1 &\\text{$2}\\\\\\\\","\t$3 &\\text{$4}\\\\\\\\$5","\\end{cases} $0"]
+    },
+    "LaTeX - align (alias)": {
+
+        "prefix": "align",
+        "body": ["\\begin{${1|align,align*,aligned|}}","\t$2\\\\\\\\","\t$3\\\\\\\\$4","\\end{$1} $0"]
+    },
+
+
+    "LaTeX - frac": {
+
+        "prefix": "frac",
+        "body": ["\\frac{$1}{$2}$0"]
+    },
+    "LaTeX - sqrt": {
+
+        "prefix": "sqrt",
+        "body": ["\\sqrt[$1]{$2}$0"]
+    },
+
+
+    "LaTeX - alpha": {
+
+        "prefix": "alpha",
+        "body": ["\\alpha "]
+    },
+    "LaTeX - beta": {
+
+        "prefix": "beta",
+        "body": ["\\beta "]
+    },
+    "LaTeX - gamma": {
+
+        "prefix": "gamma",
+        "body": ["\\gamma "]
+    },
+    "LaTeX - Gamma": {
+
+        "prefix": "Gamma",
+        "body": ["\\Gamma "]
+    },
+    "LaTeX - vargamma": {
+
+        "prefix": "vargamma",
+        "body": ["\\vargamma "]
+    },
+    "LaTeX - delta": {
+
+        "prefix": "delta",
+        "body": ["\\delta "]
+    },
+    "LaTeX - Delta": {
+
+        "prefix": "Delta",
+        "body": ["\\Delta "]
+    },
+    "LaTeX - epsilon": {
+
+        "prefix": "epsilon",
+        "body": ["\\epsilon "]
+    },
+    "LaTeX - varepsilon": {
+
+        "prefix": "varepsilon",
+        "body": ["\\varepsilon "]
+    },
+    "LaTeX - zeta": {
+
+        "prefix": "zeta",
+        "body": ["\\zeta "]
+    },
+    "LaTeX - eta": {
+
+        "prefix": "eta",
+        "body": ["\\eta "]
+    },
+    "LaTeX - theta": {
+
+        "prefix": "theta",
+        "body": ["\\theta "]
+    },
+    "LaTeX - Theta": {
+
+        "prefix": "Theta",
+        "body": ["\\Theta "]
+    },
+    "LaTeX - vartheta": {
+
+        "prefix": "vartheta",
+        "body": ["\\vartheta "]
+    },
+    "LaTeX - iota": {
+
+        "prefix": "iota",
+        "body": ["\\iota "]
+    },
+    "LaTeX - kappa": {
+
+        "prefix": "kappa",
+        "body": ["\\kappa "]
+    },
+    "LaTeX - lambda": {
+
+        "prefix": "lambda",
+        "body": ["\\lambda "]
+    },
+    "LaTeX - Lambda": {
+
+        "prefix": "Lambda",
+        "body": ["\\Lambda "]
+    },
+    "LaTeX - mu": {
+
+        "prefix": "mu",
+        "body": ["\\mu "]
+    },
+    "LaTeX - nu": {
+
+        "prefix": "nu",
+        "body": ["\\nu "]
+    },
+    "LaTeX - xi": {
+
+        "prefix": "xi",
+        "body": ["\\xi "]
+    },
+    "LaTeX - Xi": {
+
+        "prefix": "Xi",
+        "body": ["\\Xi "]
+    },
+    "LaTeX - pi": {
+
+        "prefix": "pi",
+        "body": ["\\pi "]
+    },
+    "LaTeX - Pi": {
+
+        "prefix": "Pi",
+        "body": ["\\Pi "]
+    },
+    "LaTeX - varpi": {
+
+        "prefix": "varpi",
+        "body": ["\\varpi "]
+    },
+    "LaTeX - rho": {
+
+        "prefix": "rho",
+        "body": ["\\rho "]
+    },
+    "LaTeX - varrho": {
+
+        "prefix": "varrho",
+        "body": ["\\varrho "]
+    },
+    "LaTeX - sigma": {
+
+        "prefix": "sigma",
+        "body": ["\\sigma "]
+    },
+    "LaTeX - Sigma": {
+
+        "prefix": "Sigma",
+        "body": ["\\Sigma "]
+    },
+    "LaTeX - varsigma": {
+
+        "prefix": "varsigma",
+        "body": ["\\varsigma "]
+    },
+    "LaTeX - tau": {
+
+        "prefix": "tau",
+        "body": ["\\tau "]
+    },
+    "LaTeX - upsilon": {
+
+        "prefix": "upsilon",
+        "body": ["\\upsilon "]
+    },
+    "LaTeX - Upsilon": {
+
+        "prefix": "Upsilon",
+        "body": ["\\Upsilon "]
+    },
+    "LaTeX - phi": {
+
+        "prefix": "phi",
+        "body": ["\\phi "]
+    },
+    "LaTeX - Phi": {
+
+        "prefix": "Phi",
+        "body": ["\\Phi "]
+    },
+    "LaTeX - varphi": {
+
+        "prefix": "varphi",
+        "body": ["\\varphi "]
+    },
+    "LaTeX - chi": {
+
+        "prefix": "chi",
+        "body": ["\\chi "]
+    },
+    "LaTeX - psi": {
+
+        "prefix": "psi",
+        "body": ["\\psi "]
+    },
+    "LaTeX - Psi": {
+
+        "prefix": "Psi",
+        "body": ["\\Psi "]
+    },
+    "LaTeX - omega": {
+
+        "prefix": "omega",
+        "body": ["\\omega "]
+    },
+    "LaTeX - Omega": {
+
+        "prefix": "Omega",
+        "body": ["\\Omega "]
+    },
+    "LaTeX - digamma": {
+
+        "prefix": "digamma",
+        "body": ["\\digamma "]
+    },
+    "LaTeX - Digamma": {
+
+        "prefix": "Digamma",
+        "body": ["\\Digamma "]
+    },
+
+
+
+    "LaTeX - aleph": {
+
+        "prefix": "aleph",
+        "body": ["\\aleph "]
+    },
+    "LaTeX - beth": {
+
+        "prefix": "beth",
+        "body": ["\\beth "]
+    },
+    "LaTeX - gimel": {
+
+        "prefix": "gimel",
+        "body": ["\\gimel "]
+    },
+    "LaTeX - daleth": {
+
+        "prefix": "daleth",
+        "body": ["\\daleth "]
+    },
+
+
+
+    "LaTeX - cup": {
+
+        "prefix": "cup",
+        "body": ["\\cup "]
+    },
+    "LaTeX - cap": {
+
+        "prefix": "cap",
+        "body": ["\\cap "]
+    },
+    "LaTeX - sqcup": {
+
+        "prefix": "sqcup",
+        "body": ["\\sqcup "]
+    },
+    "LaTeX - sqcap": {
+
+        "prefix": "sqcap",
+        "body": ["\\sqcap "]
+    },
+    "LaTeX - subset": {
+
+        "prefix": "subset",
+        "body": ["\\subset "]
+    },
+    "LaTeX - notsubset": {
+
+        "prefix": "notsubset",
+        "body": ["\\not\\subset "]
+    },
+    "LaTeX - subseteq": {
+
+        "prefix": "subseteq",
+        "body": ["\\subseteq "]
+    },
+    "LaTeX - nsubseteq": {
+
+        "prefix": "nsubseteq",
+        "body": ["\\nsubseteq "]
+    },
+    "LaTeX - sqsubset": {
+
+        "prefix": "sqsubset",
+        "body": ["\\sqsubset "]
+    },
+    "LaTeX - sqsubseteq": {
+
+        "prefix": "sqsubseteq",
+        "body": ["\\sqsubseteq "]
+    },
+    "LaTeX - sqsupset": {
+
+        "prefix": "sqsupset",
+        "body": ["\\sqsupset "]
+    },
+    "LaTeX - sqsupseteq": {
+
+        "prefix": "sqsupseteq",
+        "body": ["\\sqsupseteq "]
+    },
+    "LaTeX - supset": {
+
+        "prefix": "supset",
+        "body": ["\\supset "]
+    },
+    "LaTeX - notsupset": {
+
+        "prefix": "notsupset",
+        "body": ["\\not\\supset "]
+    },
+    "LaTeX - supseteq": {
+
+        "prefix": "supseteq",
+        "body": ["\\supseteq "]
+    },
+    "LaTeX - nsupseteq": {
+
+        "prefix": "nsupseteq",
+        "body": ["\\nsupseteq "]
+    },
+    "LaTeX - in": {
+
+        "prefix": "in",
+        "body": ["\\in "]
+    },
+    "LaTeX - ni": {
+
+        "prefix": "ni",
+        "body": ["\\ni "]
+    },
+    "LaTeX - not in": {
+
+        "prefix": "notin",
+        "body": ["\\not\\in "]
+    },
+    "LaTeX - not": {
+
+        "prefix": "not",
+        "body": ["\\not "]
+    },
+    "LaTeX - varnothing": {
+
+        "prefix": "varnothing",
+        "body": ["\\varnothing "]
+    },
+    "LaTeX - emptyset": {
+
+        "prefix": "emptyset",
+        "body": ["\\emptyset "]
+    },
+    "LaTeX - setminus": {
+
+        "prefix": "setminus",
+        "body": ["\\setminus "]
+    },
+    "LaTeX - equiv": {
+
+        "prefix": "equiv",
+        "body": ["\\equiv "]
+    },
+    "LaTeX - forall": {
+
+        "prefix": "forall",
+        "body": ["\\forall "]
+    },
+    "LaTeX - exists": {
+
+        "prefix": "exists",
+        "body": ["\\exists "]
+    },
+    "LaTeX - nexists": {
+
+        "prefix": "nexists",
+        "body": ["\\nexists "]
+    },
+    "LaTeX - therefore": {
+
+        "prefix": "therefore",
+        "body": ["\\therefore "]
+    },
+    "LaTeX - because": {
+
+        "prefix": "because",
+        "body": ["\\because "]
+    },
+    "LaTeX - neg": {
+
+        "prefix": "neg",
+        "body": ["\\neg "]
+    },
+    "LaTeX - lnot": {
+
+        "prefix": "lnot",
+        "body": ["\\lnot "]
+    },
+    "LaTeX - vee": {
+
+        "prefix": "vee",
+        "body": ["\\vee "]
+    },
+    "LaTeX - lor": {
+
+        "prefix": "lor",
+        "body": ["\\lor "]
+    },
+    "LaTeX - wedge": {
+
+        "prefix": "wedge",
+        "body": ["\\wedge "]
+    },
+    "LaTeX - land": {
+
+        "prefix": "land",
+        "body": ["\\land "]
+    },
+    "LaTeX - vdash": {
+
+        "prefix": "vdash",
+        "body": ["\\vdash "]
+    },
+    "LaTeX - dashv": {
+
+        "prefix": "dashv",
+        "body": ["\\dashv "]
+    },
+    "LaTeX - models": {
+
+        "prefix": "models",
+        "body": ["\\models "]
+    },
+
+
+
+    "LaTeX - acute": {
+
+        "prefix": "acute",
+        "body": ["\\acute{$1}$0"]
+    },
+    "LaTeX - breve": {
+
+        "prefix": "breve",
+        "body": ["\\breve{$1}$0"]
+    },
+    "LaTeX - check": {
+
+        "prefix": "check",
+        "body": ["\\check{$1}$0"]
+    },
+    "LaTeX - mathring": {
+
+        "prefix": "mathring",
+        "body": ["\\mathring{$1}$0"]
+    },
+    "LaTeX - grave": {
+
+        "prefix": "grave",
+        "body": ["\\grave{$1}$0"]
+    },
+    "LaTeX - dot": {
+
+        "prefix": "dot",
+        "body": ["\\dot{$1}$0"]
+    },
+    "LaTeX - ddot": {
+
+        "prefix": "ddot",
+        "body": ["\\ddot{$1}$0"]
+    },
+    "LaTeX - hat": {
+
+        "prefix": "hat",
+        "body": ["\\hat{$1}$0"]
+    },
+    "LaTeX - tilde": {
+
+        "prefix": "tilde",
+        "body": ["\\tilde{$1}$0"]
+    },
+    "LaTeX - bar": {
+
+        "prefix": "bar",
+        "body": ["\\bar{$1}$0"]
+    },
+    "LaTeX - vec": {
+
+        "prefix": "vec",
+        "body": ["\\vec{$1}$0"]
+    },
+    "LaTeX - mathbf": {
+
+        "prefix": "mathbf",
+        "body": ["\\mathbf{$1}$0"]
+    },
+    "LaTeX - mathbb": {
+
+        "prefix": "mathbb",
+        "body": ["\\mathbb{$1}$0"]
+    },
+    "LaTeX - mathcal": {
+
+        "prefix": "mathcal",
+        "body": ["\\mathcal{$1}$0"]
+    },
+    "LaTeX - mathfrak": {
+
+        "prefix": "mathfrak",
+        "body": ["\\mathfrak{$1}$0"]
+    },
+    "LaTeX - mathscr": {
+
+        "prefix": "mathscr",
+        "body": ["\\mathscr{$1}$0"]
+    },
+    "LaTeX - overline": {
+
+        "prefix": "overline",
+        "body": ["\\overline{$1}$0"]
+    },
+    "LaTeX - widehat": {
+
+        "prefix": "widehat",
+        "body": ["\\widehat{$1}$0"]
+    },
+    "LaTeX - widetilde": {
+
+        "prefix": "widetilde",
+        "body": ["\\widetilde{$1}$0"]
+    },
+    "LaTeX - overbrace": {
+
+        "prefix": "overbrace",
+        "body": ["\\overbrace{$1}^{$2}$0"]
+    },
+    "LaTeX - underbrace": {
+
+        "prefix": "underbrace",
+        "body": ["\\underbrace{$1}_{$2}$0"]
+    },
+
+
+
+    "LaTeX - sin": {
+
+        "prefix": "sin",
+        "body": ["\\sin "]
+    },
+    "LaTeX - cos": {
+
+        "prefix": "cos",
+        "body": ["\\cos "]
+    },
+    "LaTeX - tan": {
+
+        "prefix": "tan",
+        "body": ["\\tan "]
+    },
+    "LaTeX - sec": {
+
+        "prefix": "sec",
+        "body": ["\\sec "]
+    },
+    "LaTeX - csc": {
+
+        "prefix": "csc",
+        "body": ["\\csc "]
+    },
+    "LaTeX - cot": {
+
+        "prefix": "cot",
+        "body": ["\\cot "]
+    },
+    "LaTeX - exp": {
+
+        "prefix": "exp",
+        "body": ["\\exp "]
+    },
+    "LaTeX - log": {
+
+        "prefix": "log",
+        "body": ["\\log_{$1} $0"]
+    },
+    "LaTeX - ln": {
+
+        "prefix": "ln",
+        "body": ["\\ln "]
+    },
+    "LaTeX - lg": {
+
+        "prefix": "lg",
+        "body": ["\\lg "]
+    },
+    "LaTeX - sinh": {
+
+        "prefix": "sinh",
+        "body": ["\\sinh "]
+    },
+    "LaTeX - cosh": {
+
+        "prefix": "cosh",
+        "body": ["\\cosh "]
+    },
+    "LaTeX - tanh": {
+
+        "prefix": "tanh",
+        "body": ["\\tanh "]
+    },
+    "LaTeX - coth": {
+
+        "prefix": "coth",
+        "body": ["\\coth "]
+    },
+    "LaTeX - det": {
+
+        "prefix": "det",
+        "body": ["\\det "]
+    },
+    "LaTeX - dim": {
+
+        "prefix": "dim",
+        "body": ["\\dim "]
+    },
+    "LaTeX - ker": {
+
+        "prefix": "ker",
+        "body": ["\\ker "]
+    },
+    "LaTeX - deg": {
+
+        "prefix": "deg",
+        "body": ["\\deg "]
+    },
+    "LaTeX - arg": {
+
+        "prefix": "arg",
+        "body": ["\\arg "]
+    },
+    "LaTeX - gcd": {
+
+        "prefix": "gcd",
+        "body": ["\\gcd "]
+    },
+    "LaTeX - arcsin": {
+
+        "prefix": "arcsin",
+        "body": ["\\arcsin "]
+    },
+    "LaTeX - arccos": {
+
+        "prefix": "arccos",
+        "body": ["\\arccos "]
+    },
+    "LaTeX - arctan": {
+
+        "prefix": "arctan",
+        "body": ["\\arctan "]
+    },
+    "LaTeX - arccsc": {
+
+        "prefix": "arccsc",
+        "body": ["\\operatorname{arccsc} "]
+    },
+    "LaTeX - arcsec": {
+
+        "prefix": "arcsec",
+        "body": ["\\operatorname{arcsec} "]
+    },
+    "LaTeX - arccot": {
+
+        "prefix": "arccot",
+        "body": ["\\operatorname{arccot} "]
+    },
+    "LaTeX - arsinh": {
+
+        "prefix": "arsinh",
+        "body": ["\\operatorname{arsinh} "]
+    },
+    "LaTeX - arcosh": {
+
+        "prefix": "arcosh",
+        "body": ["\\operatorname{arcosh} "]
+    },
+    "LaTeX - artanh": {
+
+        "prefix": "artanh",
+        "body": ["\\operatorname{artanh} "]
+    },
+    "LaTeX - csch": {
+
+        "prefix": "csch",
+        "body": ["\\operatorname{csch} "]
+    },
+    "LaTeX - sech": {
+
+        "prefix": "sech",
+        "body": ["\\operatorname{sech} "]
+    },
+    "LaTeX - arcsch": {
+
+        "prefix": "arcsch",
+        "body": ["\\operatorname{arcsch} "]
+    },
+    "LaTeX - arsech": {
+
+        "prefix": "arsech",
+        "body": ["\\operatorname{arsech} "]
+    },
+    "LaTeX - arcoth": {
+
+        "prefix": "arcoth",
+        "body": ["\\operatorname{arcoth} "]
+    },
+    "LaTeX - min": {
+
+        "prefix": "min",
+        "body": ["\\min "]
+    },
+    "LaTeX - max": {
+
+        "prefix": "max",
+        "body": ["\\max "]
+    },
+    "LaTeX - inf": {
+
+        "prefix": "inf",
+        "body": ["\\inf "]
+    },
+    "LaTeX - sup": {
+
+        "prefix": "sup",
+        "body": ["\\sup "]
+    },
+    "LaTeX - liminf": {
+
+        "prefix": "liminf",
+        "body": ["\\liminf "]
+    },
+    "LaTeX - limsup": {
+
+        "prefix": "limsup",
+        "body": ["\\limsup "]
+    },
+    "LaTeX - limits": {
+
+        "prefix": "limits",
+        "body": ["\\limits_{$1}^{$2} $0"]
+    },
+    "LaTeX - lim": {
+
+        "prefix": "lim",
+        "body": ["\\lim \\limits_{${1:x} \\to ${2:\\infty}} $0"]
+    },
+
+
+
+    "LaTeX - leq": {
+
+        "prefix": "leq",
+        "body": ["\\leq "]
+    },
+    "LaTeX - geq": {
+
+        "prefix": "geq",
+        "body": ["\\geq "]
+    },
+    "LaTeX - neq": {
+
+        "prefix": "neq",
+        "body": ["\\neq "]
+    },
+    "LaTeX - leqslant": {
+
+        "prefix": "leqslant",
+        "body": ["\\leqslant "]
+    },
+    "LaTeX - geqslant": {
+
+        "prefix": "geqslant",
+        "body": ["\\geqslant "]
+    },
+    "LaTeX - ll": {
+
+        "prefix": "ll",
+        "body": ["\\ll "]
+    },
+    "LaTeX - lll": {
+
+        "prefix": "lll",
+        "body": ["\\lll "]
+    },
+    "LaTeX - gg": {
+
+        "prefix": "gg",
+        "body": ["\\gg "]
+    },
+    "LaTeX - ggg": {
+
+        "prefix": "ggg",
+        "body": ["\\ggg "]
+    },
+    "LaTeX - nless": {
+
+        "prefix": "nless",
+        "body": ["\\nless "]
+    },
+    "LaTeX - nleq": {
+
+        "prefix": "nleq",
+        "body": ["\\nleq "]
+    },
+    "LaTeX - nleqslant": {
+
+        "prefix": "nleqslant",
+        "body": ["\\nleqslant "]
+    },
+    "LaTeX - ngtr": {
+
+        "prefix": "ngtr",
+        "body": ["\\ngtr "]
+    },
+    "LaTeX - ngeq": {
+
+        "prefix": "ngeq",
+        "body": ["\\ngeq "]
+    },
+    "LaTeX - ngeqslant": {
+
+        "prefix": "ngeqslant",
+        "body": ["\\ngeqslant "]
+    },
+    "LaTeX - approx": {
+
+        "prefix": "approx",
+        "body": ["\\approx "]
+    },
+    "LaTeX - asymp": {
+
+        "prefix": "asymp",
+        "body": ["\\asymp "]
+    },
+    "LaTeX - prec": {
+
+        "prefix": "prec",
+        "body": ["\\prec "]
+    },
+    "LaTeX - nprec": {
+
+        "prefix": "nprec",
+        "body": ["\\nprec "]
+    },
+    "LaTeX - preceq": {
+
+        "prefix": "preceq",
+        "body": ["\\preceq "]
+    },
+    "LaTeX - npreceq": {
+
+        "prefix": "npreceq",
+        "body": ["\\npreceq "]
+    },
+    "LaTeX - succ": {
+
+        "prefix": "succ",
+        "body": ["\\succ "]
+    },
+    "LaTeX - nsucc": {
+
+        "prefix": "nsucc",
+        "body": ["\\nsucc "]
+    },
+    "LaTeX - succeq": {
+
+        "prefix": "succeq",
+        "body": ["\\succeq "]
+    },
+    "LaTeX - nsucceq": {
+
+        "prefix": "nsucceq",
+        "body": ["\\nsucceq "]
+    },
+    "LaTeX - propto": {
+
+        "prefix": "propto",
+        "body": ["\\propto "]
+    },
+    "LaTeX - doteq": {
+
+        "prefix": "doteq",
+        "body": ["\\doteq "]
+    },
+    "LaTeX - triangle": {
+
+        "prefix": "triangle",
+        "body": ["\\triangle "]
+    },
+    "LaTeX - triangleright": {
+
+        "prefix": "triangleright",
+        "body": ["\\triangleright "]
+    },
+    "LaTeX - triangleleft": {
+
+        "prefix": "triangleleft",
+        "body": ["\\triangleleft "]
+    },
+    "LaTeX - angle": {
+
+        "prefix": "angle",
+        "body": ["\\angle "]
+    },
+    "LaTeX - measuredangle": {
+
+        "prefix": "measuredangle",
+        "body": ["\\measuredangle "]
+    },
+    "LaTeX - ell": {
+
+        "prefix": "ell",
+        "body": ["\\ell "]
+    },
+    "LaTeX - parallel": {
+
+        "prefix": "parallel",
+        "body": ["\\parallel "]
+    },
+    "LaTeX - nparallel": {
+
+        "prefix": "nparallel",
+        "body": ["\\nparallel "]
+    },
+    "LaTeX - bowtie": {
+
+        "prefix": "bowtie",
+        "body": ["\\bowtie "]
+    },
+    "LaTeX - perp": {
+
+        "prefix": "perp",
+        "body": ["\\perp "]
+    },
+    "LaTeX - notperp": {
+
+        "prefix": "notperp",
+        "body": ["\\not\\perp "]
+    },
+    "LaTeX - smile": {
+
+        "prefix": "smile",
+        "body": ["\\smile "]
+    },
+    "LaTeX - frown": {
+
+        "prefix": "frown",
+        "body": ["\\frown "]
+    },
+    "LaTeX - circ": {
+
+        "prefix": "circ",
+        "body": ["\\circ "]
+    },
+    "LaTeX - degree": {
+
+        "prefix": "degree",
+        "body": ["\\degree "]
+    },
+    "LaTeX - cong": {
+
+        "prefix": "cong",
+        "body": ["\\cong "]
+    },
+    "LaTeX - ncong": {
+
+        "prefix": "ncong",
+        "body": ["\\ncong "]
+    },
+    "LaTeX - sim": {
+
+        "prefix": "sim",
+        "body": ["\\sim "]
+    },
+    "LaTeX - simeq": {
+
+        "prefix": "simeq",
+        "body": ["\\simeq "]
+    },
+    "LaTeX - nsim": {
+
+        "prefix": "nsim",
+        "body": ["\\nsim "]
+    },
+    "LaTeX - bullet": {
+
+        "prefix": "bullet",
+        "body": ["\\bullet "]
+    },
+    "LaTeX - diamond": {
+
+        "prefix": "diamond",
+        "body": ["\\diamond "]
+    },
+    "LaTeX - uplus": {
+
+        "prefix": "uplus",
+        "body": ["\\uplus "]
+    },
+    "LaTeX - oplus": {
+
+        "prefix": "oplus",
+        "body": ["\\oplus "]
+    },
+    "LaTeX - ominus": {
+
+        "prefix": "ominus",
+        "body": ["\\ominus "]
+    },
+    "LaTeX - odot": {
+
+        "prefix": "odot",
+        "body": ["\\odot "]
+    },
+    "LaTeX - otimes": {
+
+        "prefix": "otimes",
+        "body": ["\\otimes "]
+    },
+    "LaTeX - oslash": {
+
+        "prefix": "oslash",
+        "body": ["\\oslash "]
+    },
+    "LaTeX - upharpoonright": {
+
+        "prefix": "upharpoonright",
+        "body": ["\\upharpoonright "]
+    },
+    "LaTeX - cdot": {
+
+        "prefix": "cdot",
+        "body": ["\\cdot "]
+    },
+    "LaTeX - cdots": {
+
+        "prefix": "cdots",
+        "body": ["\\cdots "]
+    },
+    "LaTeX - ldots": {
+
+        "prefix": "ldots",
+        "body": ["\\ldots "]
+    },
+    "LaTeX - vdots": {
+
+        "prefix": "vdots",
+        "body": ["\\vdots "]
+    },
+    "LaTeX - ddots": {
+
+        "prefix": "ddots",
+        "body": ["\\ddots "]
+    },
+    "LaTeX - pm": {
+
+        "prefix": "pm",
+        "body": ["\\pm "]
+    },
+    "LaTeX - mp": {
+
+        "prefix": "mp",
+        "body": ["\\mp "]
+    },
+    "LaTeX - times": {
+
+        "prefix": "times",
+        "body": ["\\times "]
+    },
+    "LaTeX - div": {
+
+        "prefix": "div",
+        "body": ["\\div "]
+    },
+    "LaTeX - ast": {
+
+        "prefix": "ast",
+        "body": ["\\ast "]
+    },
+    "LaTeX - mid": {
+
+        "prefix": "mid",
+        "body": ["\\mid "]
+    },
+    "LaTeX - nmid": {
+
+        "prefix": "nmid",
+        "body": ["\\nmid "]
+    },
+    "LaTeX - partial": {
+
+        "prefix": "partial",
+        "body": ["\\partial "]
+    },
+    "LaTeX - nabla": {
+
+        "prefix": "nabla",
+        "body": ["\\nabla "]
+    },
+    "LaTeX - hbar": {
+
+        "prefix": "hbar",
+        "body": ["\\hbar "]
+    },
+    "LaTeX - star": {
+
+        "prefix": "star",
+        "body": ["\\star "]
+    },
+    "LaTeX - surd": {
+
+        "prefix": "surd",
+        "body": ["\\surd "]
+    },
+    "LaTeX - checkmark": {
+
+        "prefix": "checkmark",
+        "body": ["\\checkmark "]
+    },
+    "LaTeX - bigcirc": {
+
+        "prefix": "bigcirc",
+        "body": ["\\bigcirc "]
+    },
+    "LaTeX - amalg": {
+
+        "prefix": "amalg",
+        "body": ["\\amalg "]
+    },
+    "LaTeX - bigtriangleup": {
+
+        "prefix": "bigtriangleup",
+        "body": ["\\bigtriangleup "]
+    },
+    "LaTeX - bigtriangledown": {
+
+        "prefix": "bigtriangledown",
+        "body": ["\\bigtriangledown "]
+    },
+    "LaTeX - dagger": {
+
+        "prefix": "dagger",
+        "body": ["\\dagger "]
+    },
+    "LaTeX - ddagger": {
+
+        "prefix": "ddagger",
+        "body": ["\\ddagger "]
+    },
+    "LaTeX - wr": {
+
+        "prefix": "wr",
+        "body": ["\\wr "]
+    },
+    "LaTeX - wp": {
+
+        "prefix": "wp",
+        "body": ["\\wp "]
+    },
+    "LaTeX - Re": {
+
+        "prefix": "Re",
+        "body": ["\\Re "]
+    },
+    "LaTeX - Im": {
+
+        "prefix": "Im",
+        "body": ["\\Im "]
+    },
+    "LaTeX - imath": {
+
+        "prefix": "imath",
+        "body": ["\\imath "]
+    },
+    "LaTeX - jmath": {
+
+        "prefix": "jmath",
+        "body": ["\\jmath "]
+    },
+    "LaTeX - eth": {
+
+        "prefix": "eth",
+        "body": ["\\eth "]
+    },
+    "LaTeX - prime": {
+
+        "prefix": "prime",
+        "body": ["\\prime "]
+    },
+    "LaTeX - Box": {
+
+        "prefix": "Box",
+        "body": ["\\Box "]
+    },
+    "LaTeX - bot": {
+
+        "prefix": "bot",
+        "body": ["\\bot "]
+    },
+    "LaTeX - top": {
+
+        "prefix": "top",
+        "body": ["\\top "]
+    },
+    "LaTeX - infty": {
+
+        "prefix": "infty",
+        "body": ["\\infty "]
+    },
+
+
+
+    "LaTeX - sum": {
+
+        "prefix": "sum",
+        "body": ["\\sum \\limits_{$1}^{$2}$0"]
+    },
+    "LaTeX - prod": {
+
+        "prefix": "prod",
+        "body": ["\\prod_{$1}^{$2}$0"]
+    },
+    "LaTeX - dif": {
+
+        "prefix": "dif",
+        "body": ["\\mathop{}\\!\\mathrm{d}"]
+    },
+    "LaTeX - int": {
+
+        "prefix": "int",
+        "body": ["\\int_{$1}^{$2}$0"]
+    },
+    "LaTeX - iint": {
+
+        "prefix": "iint",
+        "body": ["\\iint_{$1}^{$2}$0"]
+    },
+    "LaTeX - iiint": {
+
+        "prefix": "iiint",
+        "body": ["\\iiint_{$1}^{$2}$0"]
+    },
+    "LaTeX - oint": {
+
+        "prefix": "oint",
+        "body": ["\\oint_{$1}^{$2}$0"]
+    },
+    "LaTeX - bigcup": {
+
+        "prefix": "bigcup",
+        "body": ["\\bigcup_{$1}^{$2}$0"]
+    },
+    "LaTeX - bigcap": {
+
+        "prefix": "bigcap",
+        "body": ["\\bigcap_{$1}^{$2}$0"]
+    },
+    "LaTeX - bigvee": {
+
+        "prefix": "bigvee",
+        "body": ["\\bigvee_{$1}^{$2}$0"]
+    },
+    "LaTeX - bigwedge": {
+
+        "prefix": "bigwedge",
+        "body": ["\\bigwedge_{$1}^{$2}$0"]
+    },
+    "LaTeX - coprod": {
+
+        "prefix": "coprod",
+        "body": ["\\coprod_{$1}^{$2}$0"]
+    },
+    "LaTeX - biguplus": {
+
+        "prefix": "biguplus",
+        "body": ["\\biguplus_{$1}^{$2}$0"]
+    },
+    "LaTeX - bigodot": {
+
+        "prefix": "bigodot",
+        "body": ["\\bigodot_{$1}^{$2}$0"]
+    },
+    "LaTeX - bigoplus": {
+
+        "prefix": "bigoplus",
+        "body": ["\\bigoplus_{$1}^{$2}$0"]
+    },
+    "LaTeX - bigotimes": {
+
+        "prefix": "bigotimes",
+        "body": ["\\bigotimes_{$1}^{$2}$0"]
+    },
+
+
+
+    "LaTeX - iff": {
+
+        "prefix": "iff",
+        "body": ["\\iff "]
+    },
+    "LaTeX - implies": {
+
+        "prefix": "implies",
+        "body": ["\\implies "]
+    },
+    "LaTeX - rightarrow": {
+
+        "prefix": "rightarrow",
+        "body": ["\\rightarrow "]
+    },
+    "LaTeX - to": {
+
+        "prefix": "to",
+        "body": ["\\to "]
+    },
+    "LaTeX - nrightarrow": {
+
+        "prefix": "nrightarrow",
+        "body": ["\\nrightarrow "]
+    },
+    "LaTeX - longrightarrow": {
+
+        "prefix": "longrightarrow",
+        "body": ["\\longrightarrow "]
+    },
+    "LaTeX - Rightarrow": {
+
+        "prefix": "Rightarrow",
+        "body": ["\\Rightarrow "]
+    },
+    "LaTeX - Longrightarrow": {
+
+        "prefix": "Longrightarrow",
+        "body": ["\\Longrightarrow "]
+    },
+    "LaTeX - Leftarrow": {
+
+        "prefix": "Leftarrow",
+        "body": ["\\Leftarrow "]
+    },
+    "LaTeX - Longleftarrow": {
+
+        "prefix": "Longleftarrow",
+        "body": ["\\Longleftarrow "]
+    },
+    "LaTeX - Leftrightarrow": {
+
+        "prefix": "Leftrightarrow",
+        "body": ["\\Leftrightarrow "]
+    },
+    "LaTeX - Longleftrightarrow": {
+
+        "prefix": "Longleftrightarrow",
+        "body": ["\\Longleftrightarrow "]
+    },
+    "LaTeX - nRightarrow": {
+
+        "prefix": "nRightarrow",
+        "body": ["\\nRightarrow "]
+    },
+    "LaTeX - leadsto": {
+
+        "prefix": "leadsto",
+        "body": ["\\leadsto "]
+    },
+    "LaTeX - mapsto": {
+
+        "prefix": "mapsto",
+        "body": ["\\mapsto "]
+    },
+    "LaTeX - longmapsto": {
+
+        "prefix": "longmapsto",
+        "body": ["\\longmapsto "]
+    },
+    "LaTeX - longleftarrow": {
+
+        "prefix": "longleftarrow",
+        "body": ["\\longleftarrow "]
+    },
+    "LaTeX - leftarrow": {
+
+        "prefix": "leftarrow",
+        "body": ["\\leftarrow "]
+    },
+    "LaTeX - gets": {
+
+        "prefix": "gets",
+        "body": ["\\gets "]
+    },
+    "LaTeX - leftrightarrow": {
+
+        "prefix": "leftrightarrow",
+        "body": ["\\leftrightarrow "]
+    },
+    "LaTeX - longleftrightarrow": {
+
+        "prefix": "longleftrightarrow",
+        "body": ["\\longleftrightarrow "]
+    },
+    "LaTeX - downarrow": {
+
+        "prefix": "downarrow",
+        "body": ["\\downarrow "]
+    },
+    "LaTeX - Downarrow": {
+
+        "prefix": "Downarrow",
+        "body": ["\\Downarrow "]
+    },
+    "LaTeX - uparrow": {
+
+        "prefix": "uparrow",
+        "body": ["\\uparrow "]
+    },
+    "LaTeX - Uparrow": {
+
+        "prefix": "Uparrow",
+        "body": ["\\Uparrow "]
+    },
+    "LaTeX - updownarrow": {
+
+        "prefix": "updownarrow",
+        "body": ["\\updownarrow "]
+    },
+    "LaTeX - Updownarrow": {
+
+        "prefix": "Updownarrow",
+        "body": ["\\Updownarrow "]
+    },
+    "LaTeX - hookleftarrow": {
+
+        "prefix": "hookleftarrow",
+        "body": ["\\hookleftarrow "]
+    },
+    "LaTeX - hookrightarrow": {
+
+        "prefix": "hookrightarrow",
+        "body": ["\\hookrightarrow "]
+    },
+    "LaTeX - leftharpoonup": {
+
+        "prefix": "leftharpoonup",
+        "body": ["\\leftharpoonup "]
+    },
+    "LaTeX - rightharpoonup": {
+
+        "prefix": "rightharpoonup",
+        "body": ["\\rightharpoonup "]
+    },
+    "LaTeX - leftharpoondown": {
+
+        "prefix": "leftharpoondown",
+        "body": ["\\leftharpoondown "]
+    },
+    "LaTeX - rightharpoondown": {
+
+        "prefix": "rightharpoondown",
+        "body": ["\\rightharpoondown "]
+    },
+    "LaTeX - rightleftharpoons": {
+
+        "prefix": "rightleftharpoons",
+        "body": ["\\rightleftharpoons "]
+    },
+    "LaTeX - nearrow": {
+
+        "prefix": "nearrow",
+        "body": ["\\nearrow "]
+    },
+    "LaTeX - searrow": {
+
+        "prefix": "searrow",
+        "body": ["\\searrow "]
+    },
+    "LaTeX - nwarrow": {
+
+        "prefix": "nwarrow",
+        "body": ["\\nwarrow "]
+    },
+    "LaTeX - swarrow": {
+
+        "prefix": "swarrow",
+        "body": ["\\swarrow "]
+    },
+    "LaTeX - overrightarrow": {
+
+        "prefix": "overrightarrow",
+        "body": ["\\overrightarrow{$1}$0"]
+    },
+    "LaTeX - underrightarrow": {
+
+        "prefix": "underrightarrow",
+        "body": ["\\underrightarrow{$1}$0"]
+    },
+    "LaTeX - overleftarrow": {
+
+        "prefix": "overleftarrow",
+        "body": ["\\overleftarrow{$1}$0"]
+    },
+    "LaTeX - underleftarrow": {
+
+        "prefix": "underleftarrow",
+        "body": ["\\underleftarrow{$1}$0"]
+    },
+    "LaTeX - overleftrightarrow": {
+
+        "prefix": "overleftrightarrow",
+        "body": ["\\overleftrightarrow{$1}$0"]
+    },
+    "LaTeX - underleftrightarrow": {
+
+        "prefix": "underleftrightarrow",
+        "body": ["\\underleftrightarrow{$1}$0"]
+    },
+
+
+
+    "LaTeX - begin": {
+
+        "prefix": "begin",
+        "body": ["\\begin{$1}","\t$2","\\end{$1}", "$0"]
+    },
+    "LaTeX - text": {
+
+        "prefix": "text",
+        "body": ["\\text{$1}$0"]
+    },
+    "LaTeX - operatorname": {
+
+        "prefix": "operatorname",
+        "body": ["\\operatorname{$1}$0"]
+    },
+    "LaTeX - displaystyle ": {
+
+        "prefix": "displaystyle ",
+        "body": ["\\displaystyle "]
+    },
+    "LaTeX - textbackslash ": {
+
+        "prefix": "textbackslash ",
+        "body": ["\\textbackslash "]
+    }
+
+}

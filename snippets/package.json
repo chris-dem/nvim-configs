@@ -1,0 +1,19 @@
+{
+    "name": "personal-snippets",
+    "contributes": {
+        "snippets": [
+            {
+                "language": [
+                    "latex"
+                ],
+                "path": "./text-snippets.json"
+            }
+            {
+                "language": [
+                    "markdown", "latex"
+                ],
+                "path": "./math-snippets.json"
+            }
+        ],
+    }
+}
