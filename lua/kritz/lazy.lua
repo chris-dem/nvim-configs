@@ -388,4 +388,7 @@ return require('lazy').setup({
             })
         end,
     },
+    {
+        "meznaric/key-analyzer.nvim", opts = {}
+    }
 })
