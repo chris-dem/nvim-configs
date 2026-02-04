@@ -138,12 +138,13 @@ local lua_opts = lsp_zero.nvim_lua_ls()
 local servers = {
     -- lsp_zero.default_setup,
     lua_ls = lua_opts,
+
     pyright = {
         handlers = handlers,
         capabilities = capabilities,
         on_attach = function(client, bufnr)
-            client.server_capabilities.hoverProvider = false
-            client.server_capabilities.signature_help = false
+            client.server_capabilities.hoverProvider = true
+            client.server_capabilities.signature_help = true
         end
     },
     ltex = {
@@ -168,8 +169,29 @@ local servers = {
         },
     },
     texlab = {},
-    rust_analyzer = { },
+    ts_ls = {
+        init_options = {
+            plugins = {
+                {
+                    name = '@vue/typescript-plugin',
+                    location = vim.fn.stdpath('data') ..
+                    '/mason/packages/vue-language-server/node_modules/@vue/language-server',
+                    languages = { 'vue' },
+                },
+            },
+        },
+        filetypes = { 'javascript', 'typescript', 'vue' },
+    },
+    volar = {
+        init_options = {
+            vue = {
+                hybridMode = false,
+            }
+        }
+    },
+    rust_analyzer = {},
 };
+
 
 servers = vim.tbl_extend("force", servers, lsp_zero.nvim_lua_ls());
 

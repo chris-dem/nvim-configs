@@ -157,7 +157,7 @@ return require('lazy').setup({
         dependencies = { "nvim-tree/nvim-web-devicons" },
         cmd = "Trouble",
         opts = {
-            diagnostics = { auto_open = true }
+            diagnostics = { auto_open = false }
         },
         keys = {
             -- your configuration comes here

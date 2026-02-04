@@ -1746,7 +1746,6 @@
         "body": ["\\begin{$1}","\t$2","\\end{$1}", "$0"]
     },
     "LaTeX - text": {
-
         "prefix": "text",
         "body": ["\\text{$1}$0"]
     },
