@@ -1,4 +1,3 @@
-local dashboard = require('dashboard')
 
 local second_brain_telescope = function ()
     vim.cmd('cd ~/notes/Knowledge-Base/personal/')
@@ -15,6 +14,7 @@ local edit_vim_dotfiles = function ()
     vim.cmd('Telescope find_files find_command=rg,--hidden,--files')
     end
 
+local dashboard = require('dashboard')
 dashboard.setup {
     theme = 'hyper',
     config = {

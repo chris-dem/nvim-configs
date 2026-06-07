@@ -19,3 +19,12 @@ require("telescope").setup({
 })
 require("telescope").load_extension("noice")
 require('telescope').load_extension('luasnip')
+require('telescope').load_extension('loogle')
+
+
+
+vim.api.nvim_buf_set_keymap(
+  0, "n", "<leader>tg",
+  "<Cmd>lua require'telescope.builtin'.live_grep{ search_dirs = require'lean'.current_search_paths() }<CR>",
+  { noremap = true }
+)

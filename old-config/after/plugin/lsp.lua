@@ -1,3 +1,4 @@
+-- Old lsp config
 local lsp_zero = require('lsp-zero')
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
@@ -131,8 +132,6 @@ for word in io.open(vim.fn.stdpath("config") .. "/spell/en.utf-8.add", "r"):line
     table.insert(words, word)
 end
 
--- to learn how to use mason.nvim with lsp-zero
--- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
 require('mason').setup({})
 local lua_opts = lsp_zero.nvim_lua_ls()
 local servers = {
@@ -147,6 +146,7 @@ local servers = {
             client.server_capabilities.signature_help = true
         end
     },
+    uiua = {},
     ltex = {
         capabilities = require('cmp_nvim_lsp').default_capabilities(),
         on_attach = lsp_zero.on_attach, -- Inherit keymaps
@@ -175,7 +175,7 @@ local servers = {
                 {
                     name = '@vue/typescript-plugin',
                     location = vim.fn.stdpath('data') ..
-                    '/mason/packages/vue-language-server/node_modules/@vue/language-server',
+                        '/mason/packages/vue-language-server/node_modules/@vue/language-server',
                     languages = { 'vue' },
                 },
             },
@@ -253,27 +253,6 @@ cmp.setup({
     },
     formatting = lsp_zero.cmp_format(),
     mapping = cmp.mapping.preset.insert({
-        -- ["<CR>"] = cmp.mapping.confirm({ select = true }),
-        -- ["<Tab>"] = cmp.mapping(function(fallback)
-        --     if cmp.visible() then
-        --         cmp.select_next_item()
-        --     elseif luasnip.expand_or_jumpable() then
-        --         luasnip.expand_or_jump()
-        --     elseif has_words_before() then
-        --         cmp.complete()
-        --     else
-        --         fallback()
-        --     end
-        -- end, { "i", "s" }),
-        -- ["<S-Tab>"] = cmp.mapapping(function(fallback)ping(function(fallback)
-        --     if cmp.visible() then
-        --         cmp.select_prev_item()
-        --     elseif luasnip.jumpable(-1) then
-        --         luasnip.jump(-1)
-        --     else
-        --         fallback()
-        --     end
-        -- end, { "i", "s" }),
         ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
         ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
         ['<C-y>'] = cmp.mapping.confirm({ select = true }),
