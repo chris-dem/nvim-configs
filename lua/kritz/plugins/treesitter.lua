@@ -1,7 +1,6 @@
 return {
     "nvim-treesitter/nvim-treesitter",
-    branch = "main",
-    event = { "BufReadPre", "BufNewFile" },
+    lazy = false,
     build = ":TSUpdate",
     dependencies = {
         "windwp/nvim-ts-autotag",
@@ -10,13 +9,14 @@ return {
         local disable_markdown = vim.fn.has("nvim-0.12") == 1
 
         -- import nvim-treesitter plugin
-        local treesitter = require("nvim-treesitter.configs")
+        local treesitter = require("nvim-treesitter")
 
         -- nvim-treesitter ships a Haskell parser, but not separate parsers for
         -- literate Haskell or Cabal files.
         vim.treesitter.language.register("haskell", "lhaskell")
 
         require("nvim-treesitter.install").prefer_git = true
+        require("telescope").load_extension("noice")
 
         -- configure treesitter
         treesitter.setup({ -- enable syntax highlighting

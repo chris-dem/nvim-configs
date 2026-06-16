@@ -14,6 +14,8 @@ return {
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
         local keymap = vim.keymap
         local qt_clangd_flag_pattern = "^Unknown argument:%s*['\"]?%-mno%-direct%-extern%-access['\"]?"
+        -- LSP completion capabilities
+
 
         local default_publish_diagnostics = vim.lsp.handlers["textDocument/publishDiagnostics"]
         vim.lsp.handlers["textDocument/publishDiagnostics"] = function(err, result, ctx, config)
@@ -37,9 +39,13 @@ return {
                 local opts = { buffer = ev.buf, silent = true }
 
                 local client = vim.lsp.get_client_by_id(ev.data.client_id)
+                local exempt = { "leanls" } -- add others you want to keep semantic tokens for
                 if client and client.server_capabilities.semanticTokensProvider then
-                    client.server_capabilities.semanticTokensProvider = nil
+                    if not vim.tbl_contains(exempt, client.name) then
+                        client.server_capabilities.semanticTokensProvider = nil
+                    end
                 end
+
 
                 opts.desc = "Show LSP references"
                 keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
@@ -97,8 +103,8 @@ return {
             end,
         })
 
-        -- LSP completion capabilities
-        local capabilities = cmp_nvim_lsp.default_capabilities()
+
+
 
         -- diagnostic signs
         local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
@@ -233,6 +239,20 @@ return {
         vim.lsp.enable("tinymist")
 
         -- ============================
+        -- Lean
+        -- ============================
+
+        vim.lsp.config('lean', {
+            capabilities = cmp_nvim_lsp.default_capabilities(),
+        })
+
+        -- ============================
+        -- Lean
+        -- ============================
+
+        -- In your init.lua or a separate lsp.lua file
+        vim.lsp.config('ruff', {})
+        -- ============================
         -- Haskell
         -- ============================
         if vim.fn.executable("haskell-language-server-wrapper") == 1 then
@@ -244,23 +264,6 @@ return {
             })
 
             vim.lsp.enable("hls")
-        end
-
-        -- ============================
-        -- Godot / GDScript
-        -- ============================
-        vim.lsp.config("gdscript", {
-            capabilities = capabilities,
-        })
-
-        vim.lsp.enable("gdscript")
-
-        if vim.fn.executable("gdshader-lsp") == 1 then
-            vim.lsp.config("gdshader_lsp", {
-                capabilities = capabilities,
-            })
-
-            vim.lsp.enable("gdshader_lsp")
         end
     end,
 

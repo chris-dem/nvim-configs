@@ -102,12 +102,12 @@ M.items = {
         repo = "RRethy/base16-nvim",
         schemes = { "base16-default-dark", "base16-default-light" },
     },
-    {
-        "scottmckendry/cyberdream.nvim",
-        lazy = false,
-        priority = 1000,
-    }
+    
 }
+--[[{
+        repo = "scottmckendry/cyberdream.nvim",
+        schemes = { "cyberdream", }
+    }]]
 
 function M.names()
     local names = {}

@@ -1,5 +1,3 @@
-require("kritz")
-
 local lsp_log = vim.lsp.log.get_filename()
 local max_lsp_log_size = 10 * 1024 * 1024
 

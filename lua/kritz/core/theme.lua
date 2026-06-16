@@ -3,7 +3,7 @@ local colorschemes = require("kritz.core.colorschemes")
 
 local config = {
     themes = colorschemes.names(),
-    default = "catpuccin",
+    default = "catppuccin-mocha",
     state_file = vim.fn.stdpath("state") .. "/theme.txt",
 }
 

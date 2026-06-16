@@ -85,5 +85,7 @@ return {
         -- Keymaps
         vim.keymap.set("n", "<leader>h", ":BufferLineMovePrev<CR>", { silent = true, desc = "Move buffer left" })
         vim.keymap.set("n", "<leader>l", ":BufferLineMoveNext<CR>", { silent = true, desc = "Move buffer right" })
+        vim.keymap.set("n", "<leader>cl", ":BufferLineCycleNext<CR>", { silent = true, desc = "Cycle left" })
+        vim.keymap.set("n", "<leader>cr", ":BufferLineCyclePrev<CR>", { silent = true, desc = "Cycle right" })
     end,
 }

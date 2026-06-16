@@ -2,15 +2,12 @@ return {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-        local api = require("nvim-tree")
+        local nvimtree = require("nvim-tree")
 
-        api.setup({
+        nvimtree.setup({
             sync_root_with_cwd = true,
-            respect_buf_cwd = false,
-            update_focused_file = {
-                enable = true,
-                update_root = false,
-            },
+            respect_buf_cwd = true,
+            reload_on_bufenter = true,
             view = {
                 side = "left",
                 width = 35,
@@ -25,7 +22,6 @@ return {
             renderer = {
                 highlight_opened_files = "all",
             },
-            git = { enable = false },
             tab = {
                 sync = {
                     open = false,
@@ -37,6 +33,9 @@ return {
         local function opts(desc)
             return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
         end
+
+
+        local api = require("nvim-tree.api")
 
         vim.keymap.set('n', '<leader>q', api.tree.toggle)
         vim.keymap.set('n', '?', api.tree.toggle_help, opts('Help'))
