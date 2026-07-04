@@ -1,25 +1,23 @@
 return {
-    {
-        "https://github.com/sphamba/smear-cursor.nvim",
-        config = function()
-            require("smear_cursor").setup({
-                -- enabled = false,
-                cursor_color = "#ffffff",
+    "sphamba/smear-cursor.nvim",
 
-                never_draw_over_target = true,
+    opts = {
+        -- Smear cursor when switching buffers or windows.
+        smear_between_buffers = true,
 
-                smear_insert_mode = false,
-                min_vertical_distance_smear = 2,
-                min_horizontal_distance_smear = 2,
+        -- Smear cursor when moving within line or to neighbor lines.
+        -- Use `min_horizontal_distance_smear` and `min_vertical_distance_smear` for finer control
+        smear_between_neighbor_lines = true,
 
-                time_interval = 17, -- ms
-                stiffness = 0.9,
-                trailing_stiffness = 0.4,
-                damping = 0.99, -- stops bouncing
+        -- Draw the smear in buffer space instead of screen space when scrolling
+        scroll_buffer_space = true,
 
-                -- anticipation = 0.2,
-                -- distance_stop_animating = 0.6,
-            })
-        end,
+        -- Set to `true` if your font supports legacy computing symbols (block unicode symbols).
+        -- Smears and particles will look a lot less blocky.
+        legacy_computing_symbols_support = false,
+
+        -- Smear cursor in insert mode.
+        -- See also `vertical_bar_cursor_insert_mode` and `distance_stop_animating_vertical_bar`.
+        smear_insert_mode = true,
     },
 }

@@ -156,12 +156,6 @@ return {
                 "clangd",
                 "--background-index",
                 "--clang-tidy",
-                "--query-driver=/usr/bin/c++,/usr/bin/g++",
-            },
-            init_options = {
-                fallbackFlags = {
-                    "-std=c++20",
-                },
             },
         })
         vim.lsp.enable("clangd")
@@ -252,6 +246,7 @@ return {
 
         -- In your init.lua or a separate lsp.lua file
         vim.lsp.config('ruff', {})
+        vim.lsp.enable("ruff")
         -- ============================
         -- Haskell
         -- ============================

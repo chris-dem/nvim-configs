@@ -12,15 +12,6 @@ return {
                 return not message:match("^Unknown argument:%s*['\"]?%-mno%-direct%-extern%-access['\"]?")
             end,
         },
-        modes = {
-            diagnostics = {
-                filter = {
-                    ["not"] = {
-                        ignore_qt_compiler_arg = true,
-                    },
-                },
-            },
-        },
     },
     keys = {
         -- your configuration comes here

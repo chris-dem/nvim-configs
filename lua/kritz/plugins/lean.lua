@@ -1,3 +1,10 @@
+
+---@type lean.Config
+vim.g.lean_config = { -- see the manual for full configuration options
+        mappings = true,
+        graphics = { enabled = true }
+    }
+
 return {
     'Julian/lean.nvim',
     event = { 'BufReadPre *.lean', 'BufNewFile *.lean' },
@@ -10,9 +17,4 @@ return {
         'andrewradev/switch.vim',        -- for switch support
         -- 'tomtom/tcomment_vim',           -- for commenting
     },
-
-    ---@type lean.Config
-    opts = { -- see the manual for full configuration options
-        mappings = true,
-    }
 }
